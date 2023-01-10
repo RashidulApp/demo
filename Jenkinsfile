@@ -9,7 +9,8 @@ pipeline {
 
     stage('error') {
       steps {
-        sh 'npm run dev'
+        sh '''npm install
+npm run dev'''
       }
     }
 
